@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:ViewBase xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="BillsReminder.SomSamplepage"
+             xmlns:local="clr-namespace:BillsReminder;assembly=BillsReminder">
+	<Label Text="horrible text" VerticalOptions="Center" HorizontalOptions="Center" />
+</local:ViewBase>
