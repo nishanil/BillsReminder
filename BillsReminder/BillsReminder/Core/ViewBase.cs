@@ -5,17 +5,19 @@ using Xamarin.Forms;
 
 namespace BillsReminder
 {
-    public class ViewBase<TViewModel> : ContentPage, IView<TViewModel> where TViewModel : ViewModelBase
+    public class ViewBase<TViewModel> : ContentView, IView<TViewModel> where TViewModel : ViewModelBase, new()
     {
-        private ViewBase()
-        { }
+        public ViewBase()
+        {
+            ViewModel = new TViewModel();
+            
+            //SetBinding(Page.TitleProperty, new Binding(ViewModelBase.PageTitlePropertyName));
+            //SetBinding(Page.IconProperty, new Binding(TViewModel.Icon));
+        }
 
-        public ViewBase(TViewModel tViewModel)
+        public ViewBase(TViewModel tViewModel) : this()
         {
             ViewModel = tViewModel;
-            SetBinding(Page.TitleProperty, new Binding(tViewModel.PageTitle));
-            SetBinding(Page.IconProperty, new Binding(tViewModel.Icon));
-
         }
 
         /// <summary>
@@ -32,9 +34,6 @@ namespace BillsReminder
                 BindingContext = value;
             }
         }
+
     }
-
-
-    //public class ViewBase : ContentPage
-    //{}
 }

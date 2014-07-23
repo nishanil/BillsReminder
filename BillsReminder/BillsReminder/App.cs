@@ -11,7 +11,7 @@ namespace BillsReminder
 	{
 		public static Page GetMainPage()
 		{
-		    return new CategoryPage();
+		    return new NavigationPage(new CategoryPage());
 		    //return new ContentPage
 		    //{
 		    //    Content = new Label {

@@ -10,6 +10,7 @@ namespace BillsReminder
     {
         private string pageTitle;
 
+        public const string PageTitlePropertyName = "PageTitle";
         public string PageTitle
         {
             get { return pageTitle; }

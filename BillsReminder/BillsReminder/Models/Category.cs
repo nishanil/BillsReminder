@@ -15,6 +15,14 @@ namespace BillsReminder
                 OnPropertyChanged();
             }
         }
+
+        private string notes;
+
+        public string Notes
+        {
+            get { return notes; }
+            set { notes = value; OnPropertyChanged(); }
+        }
         
         
     }

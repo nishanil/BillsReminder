@@ -14,9 +14,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Core\IViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\ModelBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\ObservableObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\PageBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\ViewBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\ViewModelBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Category.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PageHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\Pages\Category\CategoryPage.xaml.cs">
       <DependentUpon>CategoryPage.xaml</DependentUpon>
       <SubType>Code</SubType>
